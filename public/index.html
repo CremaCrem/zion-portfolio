@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zion - Portfolio</title>
+    <link href="output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-retro-bg text-gray-200 font-retro">
+    <!-- Navigation -->
+    <header class="bg-retro-surface border-b border-retro-border">
+      <nav
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <a href="#" class="text-white text-xl font-bold">Zion</a>
+        <div class="space-x-6">
+          <a
+            href="#about"
+            class="text-gray-300 hover:text-retro-blue transition-colors"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="text-gray-300 hover:text-retro-blue transition-colors"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-300 hover:text-retro-blue transition-colors"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-300 hover:text-retro-blue transition-colors"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+      <!-- About Section -->
+      <section
+        id="about"
+        class="mb-12 p-6 border border-retro-border rounded bg-retro-surface relative overflow-hidden"
+      >
+        <!-- CRT Scanlines Effect -->
+        <div class="crt-overlay absolute inset-0 pointer-events-none"></div>
+
+        <h2
+          class="text-retro-blue text-2xl mb-4 pb-2 border-b border-retro-border"
+        >
+          About Me
+        </h2>
+
+        <div
+          class="terminal-container bg-black p-4 rounded font-mono text-green-400 relative flex flex-col"
+        >
+          <!-- Terminal Output Area -->
+          <div id="terminal-output" class="flex-1 overflow-y-auto mb-2 pr-2">
+            <!-- Initial Typing Animation -->
+            <p class="terminal-line" data-typing-delay="0">
+              &gt; Initializing portfolio system...
+            </p>
+            <p class="terminal-line" data-typing-delay="1000">
+              &gt; Welcome to user_console_v1.4.2
+            </p>
+            <p class="terminal-line" data-typing-delay="2000">
+              &gt; Loading developer_profile.js
+            </p>
+
+            <!-- Interactive Code Block -->
+            <div class="ml-4 mt-2 interactive-code">
+              <p class="terminal-line" data-editable="true" data-var="name">
+                &gt; const developer = {
+              </p>
+              <p
+                class="terminal-line ml-4"
+                data-editable="true"
+                data-var="name"
+              >
+                name: <span class="editable-text">"Jeremy Zion L. Jamer"</span>,
+              </p>
+              <p
+                class="terminal-line ml-4"
+                data-editable="true"
+                data-var="role"
+              >
+                role: <span class="editable-text">"Full Stack Developer"</span>,
+              </p>
+              <p
+                class="terminal-line ml-4"
+                data-editable="true"
+                data-var="experience"
+              >
+                experience: <span class="editable-text">"5 years"</span>
+              </p>
+              <p class="terminal-line">};</p>
+            </div>
+          </div>
+
+          <!-- Input Area (always at bottom) -->
+          <div
+            class="terminal-input-container border-t border-retro-border pt-2"
+          >
+            <div class="input-line flex items-center">
+              <span class="mr-2">&gt;</span>
+              <input
+                type="text"
+                class="terminal-input bg-transparent border-none text-green-400 focus:outline-none flex-1"
+                placeholder="Try 'help' for commands..."
+                id="terminal-input"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section
+        id="skills"
+        class="mb-12 p-6 border border-retro-border rounded bg-retro-surface"
+      >
+        <h2
+          class="text-retro-blue text-2xl mb-4 pb-2 border-b border-retro-border"
+        >
+          Skill Set
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Languages Card -->
+          <div class="bg-retro-bg p-4 rounded border border-retro-border">
+            <h3 class="text-retro-blue mb-3">Languages</h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                data-tech="python"
+                >Python</span
+              >
+              <span
+                class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                data-tech="javascript"
+                >JavaScript</span
+              >
+              <span
+                class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                data-tech="java"
+                >Java</span
+              >
+              <span
+                class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                data-tech="php"
+                >PHP</span
+              >
+              <span
+                class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                data-tech="c++"
+                >C++</span
+              >
+              <span
+                class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                data-tech="csharp"
+                >C#</span
+              >
+              <span
+                class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                data-tech="kotlin"
+                >Kotlin</span
+              >
+            </div>
+          </div>
+
+          <!-- Backend Card -->
+          <div class="bg-retro-bg p-4 rounded border border-retro-border">
+            <h3 class="text-retro-blue mb-3">Backend & Databases</h3>
+            <div class="space-y-2">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                  data-tech="sql"
+                  >SQL</span
+                >
+                <span
+                  class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                  data-tech="mongodb"
+                  >MongoDB</span
+                >
+                <span
+                  class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                  data-tech="rest"
+                  >REST APIs</span
+                >
+                <span
+                  class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                  data-tech="nodejs"
+                  >Node.js</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Frameworks & Tools Card -->
+          <div class="bg-retro-bg p-4 rounded border border-retro-border">
+            <h3 class="text-retro-blue mb-3">Frameworks & Tools</h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                data-tech="react"
+                >React</span
+              >
+              <span
+                class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                data-tech="nextjs"
+                >Next.js</span
+              >
+              <span
+                class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                data-tech="laravel"
+                >Laravel</span
+              >
+              <span
+                class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                data-tech="docker"
+                >Docker</span
+              >
+              <span
+                class="skill-tag px-3 py-1 bg-retro-surface rounded-full text-sm hover:cursor-pointer"
+                data-tech="xampp"
+                >XAMPP</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section
+        id="projects"
+        class="mb-12 p-6 border border-retro-border rounded bg-retro-surface"
+      >
+        <h2
+          class="text-retro-blue text-2xl mb-4 pb-2 border-b border-retro-border"
+        >
+          Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Project 1 -->
+          <div
+            class="bg-retro-bg p-4 rounded border border-retro-border hover:border-retro-blue transition-colors project-card"
+            data-theme="retro"
+          >
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-retro-blue text-lg font-medium">
+                Retro Theme Quiz Game
+              </h3>
+              <span class="text-sm text-gray-400">2025-01</span>
+            </div>
+            <p class="text-gray-400 mb-4">
+              A simple multiple choice game deployed using GitHub Pages.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-retro-surface rounded text-sm"
+                >HTML</span
+              >
+              <span class="px-2 py-1 bg-retro-surface rounded text-sm"
+                >CSS</span
+              >
+              <span class="px-2 py-1 bg-retro-surface rounded text-sm"
+                >JavaScript</span
+              >
+            </div>
+            <div class="flex gap-3">
+              <a
+                href="https://cremacrem.github.io/data-mining/"
+                class="text-retro-blue hover:underline text-sm"
+                >Live Demo →</a
+              >
+              <a
+                href="https://github.com/CremaCrem/data-mining"
+                class="text-gray-400 hover:text-retro-blue text-sm"
+                >GitHub ↗</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="bg-retro-bg p-4 rounded border border-retro-border hover:border-retro-blue transition-colors"
+          >
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-retro-blue text-lg font-medium">
+                Task Management System
+              </h3>
+              <span class="text-sm text-gray-400">2024-02</span>
+            </div>
+            <p class="text-gray-400 mb-4">
+              Real-time collaborative task management application
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-retro-surface rounded text-sm"
+                >Next.js</span
+              >
+              <span class="px-2 py-1 bg-retro-surface rounded text-sm"
+                >Laravel</span
+              >
+              <span class="px-2 py-1 bg-retro-surface rounded text-sm"
+                >Docker</span
+              >
+            </div>
+            <div class="flex gap-3">
+              <a href="#" class="text-retro-blue hover:underline text-sm"
+                >Case Study →</a
+              >
+              <a href="#" class="text-gray-400 hover:text-retro-blue text-sm"
+                >GitHub ↗</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        id="contact"
+        class="mb-12 p-6 border border-retro-border rounded bg-retro-surface"
+      >
+        <h2
+          class="text-retro-blue text-2xl mb-4 pb-2 border-b border-retro-border"
+        >
+          Communication Hub
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Left Panel: Retro Email Client -->
+          <div class="bg-retro-bg p-4 rounded border border-retro-border">
+            <div class="terminal-style-interface">
+              <div class="flex items-center gap-2 mb-4">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                <span class="text-gray-400 ml-2">Mail Client v1.2</span>
+              </div>
+
+              <form id="email-form" class="space-y-4">
+                <div>
+                  <label class="text-retro-blue block mb-1">> RECIPIENT:</label>
+                  <input
+                    type="email"
+                    required
+                    class="w-full bg-retro-surface border border-retro-border p-2 text-gray-200 focus:outline-none focus:border-retro-blue"
+                    placeholder="user@domain.com"
+                  />
+                </div>
+
+                <div>
+                  <label class="text-retro-blue block mb-1">> SUBJECT:</label>
+                  <input
+                    type="text"
+                    required
+                    class="w-full bg-retro-surface border border-retro-border p-2 text-gray-200 focus:outline-none focus:border-retro-blue"
+                    placeholder="Enter subject line"
+                  />
+                </div>
+
+                <div>
+                  <label class="text-retro-blue block mb-1">> MESSAGE:</label>
+                  <textarea
+                    required
+                    rows="5"
+                    class="w-full bg-retro-surface border border-retro-border p-2 text-gray-200 focus:outline-none focus:border-retro-blue"
+                    placeholder="Type your message here..."
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="bg-retro-blue text-white px-6 py-2 border border-retro-blue hover:bg-retro-surface hover:text-retro-blue transition-all"
+                >
+                  [ SEND PACKET ]
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right Panel: Direct Connections -->
+          <div
+            class="bg-retro-bg p-4 rounded border border-retro-border space-y-6"
+          >
+            <!-- Social Links Matrix -->
+            <div class="connection-grid grid grid-cols-2 gap-4">
+              <a
+                href="https://linkedin.com/in/yourprofile"
+                target="_blank"
+                class="social-link p-3 border border-retro-border hover:border-retro-blue transition-colors group"
+              >
+                <div class="flex items-center gap-2">
+                  <span class="text-retro-blue">>></span>
+                  <span class="text-gray-300 group-hover:text-retro-blue"
+                    >LinkedIn</span
+                  >
+                </div>
+                <span class="text-gray-400 text-sm"
+                  >/professional-interface</span
+                >
+              </a>
+
+              <a
+                href="https://github.com/CremaCrem"
+                target="_blank"
+                class="social-link p-3 border border-retro-border hover:border-retro-blue transition-colors group"
+              >
+                <div class="flex items-center gap-2">
+                  <span class="text-retro-blue">>></span>
+                  <span class="text-gray-300 group-hover:text-retro-blue"
+                    >GitHub</span
+                  >
+                </div>
+                <span class="text-gray-400 text-sm">/code-repository</span>
+              </a>
+
+              <div class="p-3 border border-retro-border">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="text-retro-blue">>></span>
+                  <span class="text-gray-300">Location</span>
+                </div>
+                <span class="text-gray-400 text-sm">Earth, Solar System</span>
+              </div>
+
+              <div class="p-3 border border-retro-border">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="text-retro-blue">>></span>
+                  <span class="text-gray-300">Availability</span>
+                </div>
+                <span class="text-gray-400 text-sm">Active: 0800-1800 UTC</span>
+              </div>
+            </div>
+
+            <!-- Direct Ping System -->
+            <div class="ping-system border border-retro-border p-4">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-retro-blue animate-pulse">●</span>
+                <span class="text-gray-300">Live Connection</span>
+              </div>
+              <div class="flex gap-4">
+                <a
+                  href="tel:+1234567890"
+                  class="ping-button bg-retro-surface px-4 py-2 border border-retro-border hover:border-retro-blue transition-colors"
+                >
+                  Voice Channel
+                </a>
+                <a
+                  href="mailto:your@email.com"
+                  class="ping-button bg-retro-surface px-4 py-2 border border-retro-border hover:border-retro-blue transition-colors"
+                >
+                  Direct Message
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/src/scripts.js"></script>
+    <script src="/src/projectCardScripts.js"></script>
+  </body>
+</html>
