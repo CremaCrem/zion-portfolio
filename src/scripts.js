@@ -1,4 +1,3 @@
-// Terminal Module System
 const Terminal = (() => {
   const commands = {
     help: {
@@ -122,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Input Handling
-  terminalInput.addEventListener("keypress", (e) => {
+  terminalInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       const command = terminalInput.value.trim();
       if (command) {
