@@ -1,0 +1,128 @@
+/* Base theme (default / shell) */
+:root {
+  --bg-base: #0A0A0B;
+  --bg-panel: #111114;
+  --text-primary: #E4E4E7;
+  --text-dim: #71717A;
+  --accent-base: #4ADE80;
+  
+  --bg-project: var(--bg-panel);
+  --text-project: var(--text-primary);
+  --bg-project-image: none;
+  --bg-project-size: auto;
+}
+
+/* Base Card Transition */
+.project-card-inner {
+  background-color: var(--bg-panel);
+  background-image: none;
+  color: var(--text-primary);
+  border-color: rgba(113, 113, 122, 0.2); /* dim/20 */
+  transition: all 0.5s ease;
+}
+
+/* Hover States driven by data-project */
+[data-project] .project-card-inner {
+  background-color: var(--bg-project);
+  background-image: var(--bg-project-image);
+  background-size: var(--bg-project-size);
+  color: var(--text-project);
+  border-color: var(--accent);
+}
+
+/* Title Transition */
+.project-card-title {
+  color: var(--text-primary);
+  transition: all 0.5s ease;
+}
+[data-project] .project-card-title {
+  color: var(--accent-text);
+  font-family: var(--font-display, var(--font-mono));
+}
+
+/* Description / Subtext Transition */
+.project-card-desc {
+  color: var(--text-primary);
+  transition: all 0.5s ease;
+}
+[data-project] .project-card-desc {
+  color: var(--text-project);
+}
+
+.project-card-desc-dim {
+  color: var(--text-dim);
+  transition: all 0.5s ease;
+}
+[data-project] .project-card-desc-dim {
+  color: var(--text-project);
+  opacity: 0.8;
+}
+
+/* Tags Transition */
+.project-card-tag {
+  background-color: var(--bg-base);
+  border-color: rgba(113, 113, 122, 0.1);
+  color: var(--text-dim);
+  transition: all 0.5s ease;
+}
+[data-project] .project-card-tag {
+  background-color: transparent;
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+  color: color-mix(in srgb, var(--accent-text) 90%, transparent);
+}
+
+
+/* 
+  Per-project motifs
+*/
+
+/* IDSC PULSE: White background, deep forest accent, charcoal text, serif display */
+[data-project="idsc-pulse"] {
+  --accent: #059669; /* Emerald */
+  --accent-secondary: #047857;
+  --bg-project: #FFFFFF;
+  --text-project: #1F2937; /* Charcoal */
+  --font-display: var(--font-playfair);
+  --accent-text: #059669;
+}
+
+/* SARAY: Frosted deep space, indigo accent, zinc text, sans display */
+[data-project="saray"] {
+  --accent: #6366F1; /* Indigo 500 */
+  --accent-secondary: #818CF8;
+  --bg-project: #0B0F19; /* mid of 060914 and 111827 */
+  --bg-project-image: radial-gradient(circle at top left, rgba(84, 105, 212, 0.15), transparent 60%), radial-gradient(circle at top right, rgba(59, 130, 246, 0.15), transparent 60%);
+  --bg-project-size: cover;
+  --text-project: #F4F4F5; /* Zinc 100 */
+  --font-display: var(--font-sans);
+  --accent-text: #6366F1;
+}
+
+/* MUSEO DE ISAROG: Warm sepia/brown, moss green accent, cream text, sans display */
+[data-project="museo-de-isarog"],
+[data-project="museum-repository"] {
+  --accent: #6B8E23; /* Muted Moss */
+  --accent-secondary: #C9A227; 
+  --bg-project: #2C1E16; /* Earthy Brown */
+  --text-project: #FDFBF7; /* Warm Cream */
+  --font-display: var(--font-sans);
+  --accent-text: #C9A227; /* Use gold for text for contrast */
+}
+
+/* PARATANOM: Off-white grid, farming green accent, deep blue text, pixel display */
+[data-project="paratanom"] {
+  --accent: #22C55E; /* Farming Green */
+  --accent-secondary: #EA580C; /* Warm Orange */
+  --bg-project: #F8F9FA; /* Off-white */
+  --bg-project-image: linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+  --bg-project-size: 20px 20px;
+  --text-project: #1E3A8A; /* Deep Retro Blue */
+  --font-display: var(--font-pixel);
+  --accent-text: #EA580C; /* Orange for title */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

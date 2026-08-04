@@ -1,69 +1,93 @@
-import Image from "next/image";
+import { TerminalWindow } from "@/components/TerminalWindow";
+import { AvailabilityBadge } from "@/components/AvailabilityBadge";
+import { ProjectCard } from "@/components/ProjectCard";
+import { ContactForm } from "@/components/ContactForm";
+import { projects } from "@/data/projects";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="flex-1 flex flex-col py-16 space-y-32">
+      {/* About Section */}
+      <section id="about" className="scroll-mt-32">
+        <TerminalWindow title="whoami">
+          <div className="space-y-8">
+            <div>
+              <h1 className="text-4xl sm:text-5xl font-bold text-accent mb-4">Jeremy Zion L. Jamer</h1>
+              <p className="text-xl sm:text-2xl text-primary">IT Instructor & Developer</p>
+            </div>
+
+            <AvailabilityBadge />
+
+            <div className="space-y-4 text-dim leading-relaxed max-w-3xl">
+              <p>
+                BS Information Technology (Cum Laude, 1.45 GWA) from Partido State University, Class of 2026.
+              </p>
+              <p>
+                Currently serving as an IT Instructor at IDSC in Ligao City, Albay. Previously, I built cataloging and archival software during a museum internship at Museo de Isarog, and led the development of a real-time object-detection AR farming game.
+              </p>
+              <p>
+                I thrive at the intersection of practical problem-solving and engaging user experiences. Whether it's a desktop app, full-stack repository, or Unity game engine, I focus on delivering well-crafted, functional systems.
+              </p>
+            </div>
+          </div>
+        </TerminalWindow>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="scroll-mt-32">
+        <TerminalWindow title="cat skills.json">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-bold text-accent mb-4">Technical Stack</h3>
+              <ul className="space-y-3 text-dim">
+                <li><span className="text-primary font-bold">Languages:</span> JavaScript/TypeScript, Python, C++, C#</li>
+                <li><span className="text-primary font-bold">Frontend:</span> React, Vue, Tailwind CSS</li>
+                <li><span className="text-primary font-bold">Backend/DB:</span> Node.js, Express, MongoDB, SQL</li>
+                <li><span className="text-primary font-bold">Desktop/Game:</span> Tauri, Unity, Machine Learning</li>
+                <li><span className="text-primary font-bold">Tools:</span> Git, Virtual Networking (Tailscale, ngrok), Figma</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-accent mb-4">Languages & Interests</h3>
+              <ul className="space-y-3 text-dim">
+                <li><span className="text-primary font-bold">Spoken:</span> English (Fluent), Tagalog (Native), Bicolano (Native)</li>
+                <li><span className="text-primary font-bold">Interests:</span> Philosophy, Music Theory, System Development, Automation Scripting</li>
+              </ul>
+            </div>
+          </div>
+        </TerminalWindow>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="scroll-mt-32">
+        <h2 className="text-3xl font-bold text-accent mb-8 px-2">./projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {projects.map((project) => (
+            <ProjectCard key={project.slug} project={project} />
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="scroll-mt-32">
+        <TerminalWindow title="mail_client.exe">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <div className="space-y-8">
+              <h2 className="text-3xl font-bold text-accent">Initiate Handshake</h2>
+              <p className="text-dim leading-relaxed text-lg">
+                Have a project in mind, a question about my work, or want to discuss a role?
+                Send a packet through the secure channel or email me directly at <br />
+                <a href="mailto:j3remyz1on@gmail.com" className="text-primary hover:text-accent underline underline-offset-4 decoration-dim hover:decoration-accent transition-colors mt-2 inline-block">j3remyz1on@gmail.com</a>.
+              </p>
+              <div className="text-dim space-y-2 border-l-2 border-accent/30 pl-4">
+                <p>Location: Goa, Bicol 4422, Philippines</p>
+                <p>Phone: (+63) 9686749052</p>
+              </div>
+            </div>
+            <ContactForm />
+          </div>
+        </TerminalWindow>
+      </section>
+    </main>
   );
 }

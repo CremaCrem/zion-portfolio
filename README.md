@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jeremy Zion L. Jamer — Portfolio
 
-## Getting Started
+This is my personal portfolio site. I built it to show what I've been working on
+and give recruiters (both technical and non-technical) a quick way to get a feel
+for who I am and what I can do.
 
-First, run the development server:
+## What's on it
+
+- A short intro about me and my background
+- A skills section covering what I work with day to day
+- Cards for all my projects — each one has a different color theme that shows
+  up when you hover over it
+- A contact form that actually sends me an email
+- A resume download link
+
+## Projects featured
+
+1. **IDSC Pulse** — a publication platform for IDSC students to share their work
+2. **Saray** — a desktop app I made to help the museum staff catalog artifacts faster
+3. **MDI Artifact Repository** — a web dashboard for the museum's digital collection
+4. **Museo de Isarog** — the museum's public-facing landing page
+5. **Paratanom** — my capstone project, an AR farming game with real-time object detection
+
+## Running it locally
+
+You'll need Node.js installed. Clone the repo and:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If you want the contact form to actually work, you'll need to create a `.env.local`
+file with your own EmailJS credentials (it's in `.gitignore` so it won't be pushed):
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
-## Learn More
+## Built with
 
-To learn more about Next.js, take a look at the following resources:
+Next.js, TypeScript, Tailwind CSS, EmailJS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed on Vercel.
