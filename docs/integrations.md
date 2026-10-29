@@ -27,7 +27,7 @@ NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=
 2. While pending: button shows a terminal-style `sending_packet...` state.
 3. On success: replace the form with a `packet delivered ✓` terminal message.
 4. On failure: show a clear, non-technical error ("Message didn't send —
-   try again or email me directly at j3remyz1on@gmail.com") plus a `mailto:` fallback
+   try again or email me directly at jzjamer@gmail.com") plus a `mailto:` fallback
    link and a "Reset Connection" button so a recruiter is never stuck.
 
 **Spam protection (no backend, so keep it simple):**

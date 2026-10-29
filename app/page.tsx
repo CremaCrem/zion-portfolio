@@ -77,7 +77,7 @@ export default function Home() {
               <p className="text-dim leading-relaxed text-lg">
                 Have a project in mind, a question about my work, or want to discuss a role?
                 Send a packet through the secure channel or email me directly at <br />
-                <a href="mailto:j3remyz1on@gmail.com" className="text-primary hover:text-accent underline underline-offset-4 decoration-dim hover:decoration-accent transition-colors mt-2 inline-block">j3remyz1on@gmail.com</a>.
+                <a href="mailto:jzjamer@gmail.com" className="text-primary hover:text-accent underline underline-offset-4 decoration-dim hover:decoration-accent transition-colors mt-2 inline-block">jzjamer@gmail.com</a>.
               </p>
               <div className="text-dim space-y-2 border-l-2 border-accent/30 pl-4">
                 <p>Location: Goa, Bicol 4422, Philippines</p>

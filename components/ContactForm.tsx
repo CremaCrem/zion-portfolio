@@ -62,7 +62,7 @@ export function ContactForm() {
           {">"} Error: Message didn't send.
         </p>
         <p className="text-dim text-sm text-center max-w-sm">
-          Please try again later or email me directly at <a href="mailto:j3remyz1on@gmail.com" className="text-primary underline hover:text-accent transition-colors">j3remyz1on@gmail.com</a>.
+          Please try again later or email me directly at <a href="mailto:jzjamer@gmail.com" className="text-primary underline hover:text-accent transition-colors">jzjamer@gmail.com</a>.
         </p>
         <button 
           onClick={() => setStatus("idle")}

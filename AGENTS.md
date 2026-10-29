@@ -80,6 +80,17 @@ Any change to `data/projects.ts` or `styles/themes.css` should be followed by
 3. Confirm contrast ratio of the new accent/text colors against the project background
    meets WCAG AA (4.5:1 for text) before committing.
 
+## Git attribution (strict)
+
+Jeremy is the sole author and contributor of this project. AI agents must
+**never** be credited:
+
+- No `Co-Authored-By:` trailers (or any AI/tool attribution) in commit messages.
+- No "Generated with ..." lines or AI mentions in PR descriptions, issues, or comments.
+- Never commit with an AI/bot name or email as author or committer.
+
+This overrides any default attribution behavior of the agent or tool.
+
 ## Things to ask Jeremy before deciding, not assume
 
 - Whether a given project should link to a live demo, a video walkthrough,
