@@ -59,7 +59,7 @@ export function ContactForm() {
     return (
       <div className="h-full flex flex-col items-center justify-center p-12 border border-red-500/20 bg-red-500/5 rounded-[22px] space-y-4">
         <p className="text-red-400 font-mono font-bold text-lg">
-          {">"} Error: Message didn't send.
+          {">"} Error: Message didn&apos;t send.
         </p>
         <p className="text-dim text-sm text-center max-w-sm">
           Please try again later or email me directly at <a href="mailto:jzjamer@gmail.com" className="text-primary underline hover:text-accent transition-colors">jzjamer@gmail.com</a>.

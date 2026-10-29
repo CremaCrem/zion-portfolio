@@ -1,7 +1,7 @@
 export type Project = {
   slug: string;
   title: string;
-  category: "Desktop" | "Web" | "Full stack" | "Unity / AR";
+  category: "Desktop" | "Web" | "Full stack" | "Mobile" | "Unity / AR";
   oneLiner: string;
   description: string;
   role: string;
@@ -105,6 +105,113 @@ export const projects: Project[] = [
       accentSecondary: "#EA580C",
       bg: "#F8F9FA",
       displayFont: "pixel"
+    }
+  },
+  {
+    slug: "pageant-tabulator",
+    title: "PageantTabulator",
+    category: "Desktop",
+    oneLiner: "The scoring system judges used live at the Mr. and Ms. IDSC 2026 pageant, with results tallied instantly and no internet needed.",
+    description: "Offline-first Tauri v2 desktop app: the admin laptop runs an embedded Rust (axum) HTTP + WebSocket server with SQLite storage, while judges score from any browser on the venue Wi-Fi. React 19 + TypeScript frontend; GitHub Actions builds the Windows installer.",
+    role: "Solo developer (used at the IDSC 18th Founding Anniversary, Sept 10, 2026)",
+    stack: ["Tauri", "Rust", "axum", "WebSocket", "SQLite", "React", "TypeScript", "Tailwind CSS"],
+    links: [
+      { label: "Source Code", href: "https://github.com/CremaCrem/pageanttabulator" }
+    ],
+    theme: {
+      accent: "#D4AF37",
+      accentSecondary: "#B76E79",
+      bg: "#1C0F1A",
+      displayFont: "playfair"
+    }
+  },
+  {
+    slug: "shelloc",
+    title: "SHELLOC",
+    category: "Full stack",
+    oneLiner: "Web and phone dashboards that let operators watch and guide a water-cleaning robot boat in real time.",
+    description: "Python backend ingests live robot telemetry (turbidity, pH, TDS, temperature, GPS), enforces a 9-stage remediation state machine, and pushes updates over WebSockets to a React (Vite + TypeScript) web portal and a React Native (Expo) mobile app, with Leaflet GPS maps and a Google Gemini assistant for plain-language diagnostics.",
+    role: "Software developer (backend, web portal, and mobile app)",
+    stack: ["Python", "WebSocket", "React", "TypeScript", "React Native", "Expo", "Leaflet", "Google Gemini"],
+    links: [
+      { label: "Live Dashboard", href: "https://shelloc-web.vercel.app" },
+      { label: "Source Code", href: "https://github.com/CremaCrem/shelloc-backend" }
+    ],
+    theme: {
+      accent: "#22D3EE",
+      accentSecondary: "#0EA5E9",
+      bg: "#04131C",
+      displayFont: "sans"
+    }
+  },
+  {
+    slug: "kys",
+    title: "KYS – Keep Yourself Safe",
+    category: "Desktop",
+    oneLiner: "A password manager for families sharing one computer: everyone gets their own locked profile, and nothing goes to the cloud.",
+    description: "Electron + React desktop app with master-password encrypted local storage, per-profile vaults, auto-lock, a printable recovery kit, and password-protected export/import. Shipped as a Windows installer across 7 releases.",
+    role: "Solo developer",
+    stack: ["Electron", "React", "JavaScript", "Encryption"],
+    links: [
+      { label: "Download (Windows)", href: "https://github.com/CremaCrem/K.Y.S/releases" },
+      { label: "Source Code", href: "https://github.com/CremaCrem/K.Y.S" }
+    ],
+    theme: {
+      accent: "#F59E0B",
+      accentSecondary: "#FBBF24",
+      bg: "#0F1417",
+      displayFont: "sans"
+    }
+  },
+  {
+    slug: "stack-and-trace",
+    title: "Stack & Trace",
+    category: "Web",
+    oneLiner: "A playful study site that teaches data structures and algorithms through short animations and step-by-step labs.",
+    description: "Dependency-free static site (vanilla JavaScript, SVG scenes, pixel art) built for IDSC's CC 104 course. Each topic pairs an animated lesson with labs students can play, rewind, and test themselves on in a PREDICT mode; it runs by opening index.html, with no build step.",
+    role: "Solo developer (built for the CC 104 class I teach)",
+    stack: ["JavaScript", "SVG", "HTML", "CSS"],
+    links: [
+      { label: "Source Code", href: "https://github.com/CremaCrem/stack-and-trace" }
+    ],
+    theme: {
+      accent: "#7C3AED",
+      accentSecondary: "#F59E0B",
+      bg: "#FFFBEB",
+      displayFont: "pixel"
+    }
+  },
+  {
+    slug: "jvcm-songbook",
+    title: "JVCM Songbook",
+    category: "Full stack",
+    oneLiner: "A chord-chart and set-list app that replaced a worship band's spreadsheet and is used weekly by 10–20 members on their phones.",
+    description: "React + Vite PWA with an Express 5 + MongoDB API. Features a ChordPro chord engine with display-only transposition and capo hints, an arrangement builder, per-service set lists, role-based accounts, and offline viewing on stage. Tested with Vitest against an in-memory MongoDB.",
+    role: "Solo developer",
+    stack: ["React", "TypeScript", "PWA", "Express", "MongoDB", "Vitest"],
+    theme: {
+      accent: "#9F1239",
+      accentSecondary: "#B45309",
+      bg: "#FAF6EE",
+      displayFont: "spectral"
+    }
+  },
+  {
+    slug: "nutribox",
+    title: "NutriBox",
+    category: "Mobile",
+    oneLiner: "A phone app that shows the nutrition breakdown of a meal after a smart device photographs and weighs it.",
+    description: "React Native (Expo Router, TypeScript) companion app for a Raspberry Pi device that identifies ingredients with Google Gemini Vision and looks up nutrients from the USDA FoodData Central API. The app shows meal history, daily calorie and macro tracking, weekly progress, and nutrition goals.",
+    role: "Mobile app developer",
+    stack: ["React Native", "Expo", "TypeScript", "Google Gemini", "USDA API"],
+    links: [
+      { label: "Source Code", href: "https://github.com/CremaCrem/nutribox-mobile-app" }
+    ],
+    theme: {
+      accent: "#C2410C",
+      accentSecondary: "#65A30D",
+      bg: "#FFF7ED",
+      displayFont: "sans"
     }
   }
 ];

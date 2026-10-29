@@ -24,7 +24,7 @@ they're looking at someone who sweats details.
 - **Hosting:** Vercel
 - **Fonts:** next/font/google (Inter, Spectral, Playfair Display, Silkscreen, JetBrains Mono)
 - **Email:** EmailJS (client-side via `@emailjs/browser`, see integrations.md)
-- **Content:** structured data files (`data/projects.ts`) for 5 projects — no CMS needed yet
+- **Content:** structured data files (`data/projects.ts`) for 11 projects — no CMS needed yet
 
 ## Non-negotiables
 

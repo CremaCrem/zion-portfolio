@@ -26,7 +26,7 @@ export default function Home() {
                 Currently serving as an IT Instructor at IDSC in Ligao City, Albay. Previously, I built cataloging and archival software during a museum internship at Museo de Isarog, and led the development of a real-time object-detection AR farming game.
               </p>
               <p>
-                I thrive at the intersection of practical problem-solving and engaging user experiences. Whether it's a desktop app, full-stack repository, or Unity game engine, I focus on delivering well-crafted, functional systems.
+                I thrive at the intersection of practical problem-solving and engaging user experiences. Whether it&apos;s a desktop app, full-stack repository, or Unity game engine, I focus on delivering well-crafted, functional systems.
               </p>
             </div>
           </div>

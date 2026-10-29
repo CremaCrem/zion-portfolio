@@ -121,6 +121,76 @@
   --accent-text: #EA580C; /* Orange for title */
 }
 
+/* PAGEANT TABULATOR: Gala stage, deep plum with gold spotlight, ivory text, serif display */
+[data-project="pageant-tabulator"] {
+  --accent: #D4AF37; /* Stage Gold */
+  --accent-secondary: #B76E79; /* Rose Gold */
+  --bg-project: #1C0F1A; /* Deep Plum */
+  --bg-project-image: radial-gradient(ellipse at top, rgba(212, 175, 55, 0.14), transparent 65%);
+  --bg-project-size: cover;
+  --text-project: #FBF5E9; /* Ivory */
+  --font-display: var(--font-playfair);
+  --accent-text: #D4AF37;
+}
+
+/* SHELLOC: Sonar deep water, cyan accent, ice text, sans display */
+[data-project="shelloc"] {
+  --accent: #22D3EE; /* Sonar Cyan */
+  --accent-secondary: #0EA5E9;
+  --bg-project: #04131C; /* Deep Water */
+  --bg-project-image: repeating-radial-gradient(circle at 100% 0%, rgba(34, 211, 238, 0.07) 0 1px, transparent 1px 28px);
+  --bg-project-size: auto;
+  --text-project: #E0F2FE; /* Ice */
+  --font-display: var(--font-sans);
+  --accent-text: #22D3EE;
+}
+
+/* KYS: Gunmetal vault, amber accent, stone text, sans display */
+[data-project="kys"] {
+  --accent: #F59E0B; /* Vault Amber */
+  --accent-secondary: #FBBF24;
+  --bg-project: #0F1417; /* Gunmetal */
+  --bg-project-image: repeating-linear-gradient(45deg, rgba(245, 158, 11, 0.05) 0 1px, transparent 1px 12px);
+  --bg-project-size: auto;
+  --text-project: #F5F5F4; /* Stone 100 */
+  --font-display: var(--font-sans);
+  --accent-text: #FBBF24; /* Lighter amber for text */
+}
+
+/* STACK & TRACE: Notebook paper dot grid, violet accent, ink text, pixel display */
+[data-project="stack-and-trace"] {
+  --accent: #7C3AED; /* Violet */
+  --accent-secondary: #F59E0B;
+  --bg-project: #FFFBEB; /* Warm Paper */
+  --bg-project-image: radial-gradient(rgba(30, 27, 75, 0.12) 1px, transparent 1px);
+  --bg-project-size: 16px 16px;
+  --text-project: #1E1B4B; /* Indigo Ink */
+  --font-display: var(--font-pixel);
+  --accent-text: #6D28D9; /* Deeper violet for text */
+}
+
+/* JVCM SONGBOOK: Sheet music paper with staff lines, hymnal crimson accent, serif display */
+[data-project="jvcm-songbook"] {
+  --accent: #9F1239; /* Hymnal Crimson */
+  --accent-secondary: #B45309;
+  --bg-project: #FAF6EE; /* Sheet Music Paper */
+  --bg-project-image: repeating-linear-gradient(to bottom, transparent 0 23px, rgba(28, 25, 23, 0.06) 23px 24px);
+  --bg-project-size: auto;
+  --text-project: #1C1917; /* Stone 900 */
+  --font-display: var(--font-spectral);
+  --accent-text: #9F1239;
+}
+
+/* NUTRIBOX: Fresh kitchen, warm peach background, paprika accent, sans display */
+[data-project="nutribox"] {
+  --accent: #C2410C; /* Paprika */
+  --accent-secondary: #65A30D; /* Leaf Green */
+  --bg-project: #FFF7ED; /* Peach Cream */
+  --text-project: #431407; /* Roasted Brown */
+  --font-display: var(--font-sans);
+  --accent-text: #C2410C;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;

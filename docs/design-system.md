@@ -2,7 +2,7 @@
 
 ## Design principle
 
-**One shell, four moods.** The site is a dark terminal by default. Every
+**One shell, many moods.** The site is a dark terminal by default. Every
 project has its own accent color + font "motif" that only appears when you're
 looking at that project — on hover (desktop) or on tap/focus (mobile/a11y),
 and persistently on that project's own case-study page. This is how the site
@@ -72,6 +72,56 @@ Augmented reality 2D farming game with real-time YOLOv8N inference.
 - Accent Title: `#EA580C` (orange for title text)
 - Display font: `"Silkscreen"` (`var(--font-pixel)`) for titles
 - Mood: Nostalgic 8-bit/16-bit farming sim meets modern engineering grid
+
+### PageantTabulator — "Gala Stage"
+Offline live-scoring system used at Mr. and Ms. IDSC 2026.
+- Accent: `#D4AF37` (stage gold) + `#B76E79` (rose gold)
+- Background: `#1C0F1A` (deep plum) with a gold top spotlight (`rgba(212, 175, 55, 0.14)`)
+- Text: `#FBF5E9` (ivory)
+- Display font: `"Playfair Display"` (`var(--font-playfair)`)
+- Mood: Pageant night, spotlight on stage, formal elegance
+
+### SHELLOC — "Sonar Deep Water"
+Web/mobile dashboards + backend for a water-remediation robot vessel.
+- Accent: `#22D3EE` (sonar cyan) + `#0EA5E9`
+- Background: `#04131C` (deep water) with sonar rings from the top-right corner (`rgba(34, 211, 238, 0.07)`)
+- Text: `#E0F2FE` (ice)
+- Display font: `"Inter"` (`var(--font-sans)`)
+- Mood: Mission control, underwater radar HUD
+
+### KYS – Keep Yourself Safe — "Vault"
+Offline family password manager.
+- Accent: `#F59E0B` (vault amber) + `#FBBF24`
+- Background: `#0F1417` (gunmetal) with faint 45° security-hatch lines (`rgba(245, 158, 11, 0.05)`)
+- Text: `#F5F5F4` (stone 100)
+- Accent Text: `#FBBF24` (lighter amber for text)
+- Display font: `"Inter"` (`var(--font-sans)`)
+- Mood: Safe-deposit vault, solid and trustworthy
+
+### Stack & Trace — "Study Notebook"
+Animated DSA lessons and labs for CC 104.
+- Accent: `#7C3AED` (violet) + `#F59E0B` (highlighter amber)
+- Background: `#FFFBEB` (warm paper) with a 16px dot grid (`rgba(30, 27, 75, 0.12)`)
+- Text: `#1E1B4B` (indigo ink)
+- Accent Text: `#6D28D9` (deeper violet for text)
+- Display font: `"Silkscreen"` (`var(--font-pixel)`), echoing the site's pixel art
+- Mood: Playful classroom notebook
+
+### JVCM Songbook — "Sheet Music"
+Chord charts and set lists for a worship band.
+- Accent: `#9F1239` (hymnal crimson) + `#B45309`
+- Background: `#FAF6EE` (sheet-music paper) with faint staff lines every 24px (`rgba(28, 25, 23, 0.06)`)
+- Text: `#1C1917` (stone 900)
+- Display font: `"Spectral"` (`var(--font-spectral)`)
+- Mood: Printed hymnal, warm and reverent
+
+### NutriBox — "Fresh Kitchen"
+Mobile companion for an AI meal-nutrition device.
+- Accent: `#C2410C` (paprika) + `#65A30D` (leaf green)
+- Background: `#FFF7ED` (peach cream)
+- Text: `#431407` (roasted brown)
+- Display font: `"Inter"` (`var(--font-sans)`)
+- Mood: Bright, appetizing, healthy kitchen
 
 > Rule: never use the loud/display font for body copy — only the project name/headline.
 > Body copy inside a themed card uses `--text-project` and stays readable.
