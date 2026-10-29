@@ -132,9 +132,9 @@ export const projects: Project[] = [
     oneLiner: "Web and phone dashboards that let operators watch and guide a water-cleaning robot boat in real time.",
     description: "Python backend ingests live robot telemetry (turbidity, pH, TDS, temperature, GPS), enforces a 9-stage remediation state machine, and pushes updates over WebSockets to a React (Vite + TypeScript) web portal and a React Native (Expo) mobile app, with Leaflet GPS maps and a Google Gemini assistant for plain-language diagnostics.",
     role: "Software developer (backend, web portal, and mobile app)",
-    stack: ["Python", "WebSocket", "React", "TypeScript", "React Native", "Expo", "Leaflet", "Google Gemini"],
+    stack: ["Python", "WebSocket", "React", "TypeScript", "React Native", "Expo", "Leaflet"],
     links: [
-      { label: "Live Dashboard", href: "https://shelloc-web.vercel.app" },
+      { label: "Live Dashboard", href: "https://shelloc-web-eta.vercel.app" },
       { label: "Source Code", href: "https://github.com/CremaCrem/shelloc-backend" }
     ],
     theme: {
@@ -187,8 +187,11 @@ export const projects: Project[] = [
     category: "Full stack",
     oneLiner: "A chord-chart and set-list app that replaced a worship band's spreadsheet and is used weekly by 10–20 members on their phones.",
     description: "React + Vite PWA with an Express 5 + MongoDB API. Features a ChordPro chord engine with display-only transposition and capo hints, an arrangement builder, per-service set lists, role-based accounts, and offline viewing on stage. Tested with Vitest against an in-memory MongoDB.",
-    role: "Solo developer",
+    role: "Solo developer (freelance)",
     stack: ["React", "TypeScript", "PWA", "Express", "MongoDB", "Vitest"],
+    links: [
+      { label: "Live Site", href: "https://jvcm-songbook.netlify.app/" }
+    ],
     theme: {
       accent: "#9F1239",
       accentSecondary: "#B45309",
@@ -203,7 +206,7 @@ export const projects: Project[] = [
     oneLiner: "A phone app that shows the nutrition breakdown of a meal after a smart device photographs and weighs it.",
     description: "React Native (Expo Router, TypeScript) companion app for a Raspberry Pi device that identifies ingredients with Google Gemini Vision and looks up nutrients from the USDA FoodData Central API. The app shows meal history, daily calorie and macro tracking, weekly progress, and nutrition goals.",
     role: "Mobile app developer",
-    stack: ["React Native", "Expo", "TypeScript", "Google Gemini", "USDA API"],
+    stack: ["React Native", "Expo", "TypeScript", "USDA API"],
     links: [
       { label: "Source Code", href: "https://github.com/CremaCrem/nutribox-mobile-app" }
     ],
